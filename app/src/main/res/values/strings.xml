@@ -9,5 +9,12 @@
     <string name="txpassword">ini hasil password</string>
     <string name="label2">Login berhasil</string>
     <string name="login">Login</string>
+    <string name="mDaftar">Pendaftaran</string>
+    <string name="lDaftar">Daftar</string>
+    <string name="enama">Masukkan nama</string>
+    <string name="eemail">Masukkan email</string>
+    <string name="epass">Masukkan password</string>
+    <string name="erepass">Masukkan kembali passsword</string>
+    <string name="ealamat">Masukkan alamat</string>
 
 </resources>
