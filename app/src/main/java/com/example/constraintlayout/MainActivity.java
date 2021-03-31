@@ -12,8 +12,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class MainActivity extends AppCompatActivity {
+
+public class MainActivity extends AppCompatActivity  {
     Button btnLogin;
     EditText edemail, edpassword;
     String nama, password;
@@ -53,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                         Bundle b = new Bundle();
                         b.putString("a", nama.trim());
                         b.putString("b", password.trim());
-                        Intent i = new Intent(getApplicationContext(), ActivityHasil.class);
+                        Intent i = new Intent(getApplicationContext(), Home_Activity.class);
                         i.putExtras(b);
                         startActivity(i);
                     } else
@@ -76,7 +78,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item) {
+
 
         if (item.getItemId() == R.id.mnDaftar)
         {

@@ -19,16 +19,22 @@ public class FormPendaftaran extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_pendaftaran);
+        edtNama = findViewById(R.id.edNama);
+        edtAlamat = findViewById(R.id.edAlamat);
+        edtEmail = findViewById(R.id.EdEmail);
+        edtPassword = findViewById(R.id.edPass);
+        edtRepass = findViewById(R.id.edrepas);
+        fab = findViewById(R.id.fabSimpan);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                if (edtNama.getText().toString().isEmpty()||
-                        edtEmail.getText().toString().isEmpty()||
-                        edtPassword.getText().toString().isEmpty()||
-                        edtAlamat.getText().toString().isEmpty()||
+            public void onClick(View view) {
+                if (edtNama.getText().toString().isEmpty() ||
+                        edtAlamat.getText().toString().isEmpty() ||
+                        edtEmail.getText().toString().isEmpty() ||
+                        edtPassword.getText().toString().isEmpty() ||
                         edtRepass.getText().toString().isEmpty() )
                 {
-                    Snackbar.make(v, "WAJIB ISI SELURUH DATA!!!", Snackbar.LENGTH_LONG).show();
+                    Snackbar.make(view, "WAJIB ISI SELURUH DATA!!!", Snackbar.LENGTH_LONG).show();
                 }
                 else
                 {
@@ -39,7 +45,7 @@ public class FormPendaftaran extends AppCompatActivity {
                     }
                     else
                     {
-                        Snackbar.make(v, "Password dan repassword harus sama!!!!",
+                        Snackbar.make(view, "Password dan repassword harus sama!!!!",
                                 Snackbar.LENGTH_LONG).show();
                     }
                 }

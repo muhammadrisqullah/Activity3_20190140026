@@ -96,6 +96,7 @@
         android:clickable="true"
         app:srcCompat="@android:drawable/ic_menu_save"
         tools:layout_editor_absoluteX="313dp"
-        tools:layout_editor_absoluteY="498dp" />
+        tools:layout_editor_absoluteY="498dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
